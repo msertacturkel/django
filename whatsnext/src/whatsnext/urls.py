@@ -9,8 +9,11 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'users.views.home', name='home'),
+    url(r'^thank-you/$', 'users.views.thankyou', name='thankyou'),
+    
     # url(r'^whatsnext/', include('whatsnext.foo.urls')),
-
+    url(r'^$about-us/$', 'users.views.aboutus', name='aboutus'),
+    
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

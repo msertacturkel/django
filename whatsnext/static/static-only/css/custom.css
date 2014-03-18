@@ -1,0 +1,11 @@
+.jumbotron{
+    background-color: #9796D3 !important;
+}
+p{
+    color: #abcdef;
+}
+.success{
+    
+    background-color:grey;
+    text-align:center;
+}
