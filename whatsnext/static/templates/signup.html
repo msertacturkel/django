@@ -8,6 +8,18 @@
         <p>Whats Next Bro..</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
+      <div class="signup">
+      <div class="panel panel-info" style="width:500px">
+          <div class="panel-body">
+               <h4>Join Now!!!</h4>
+   
+           <form method='POST' action=''>{%csrf_token%}
+               {{form.as_p}}
+           <button type="submit" class="btn btn-success">Sign in</button>
+           </form>
+          </div>
+    </div>
+    </div>
     </div>
 {% endblock %}
 
@@ -58,10 +70,14 @@
            </form>          
         </div>
  <div class="col-sm-4">-->
+        <!--<div class="panel panel-default">
+          <div class="panel-body">
                <h1>Join Now!!!</h1>
    
            <form method='POST' action=''>{%csrf_token%}
                {{form.as_p}}
            <button type="submit" class="btn btn-success">Sign in</button>
            </form>
+        </div>
+    </div>-->
 {% endblock %}

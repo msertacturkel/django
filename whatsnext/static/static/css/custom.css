@@ -1,5 +1,7 @@
 .jumbotron{
     background-color: #9796D3;
+    width: auto;
+    height: 820px;
 }
 p{   
     color: #121213;
@@ -7,4 +9,7 @@ p{
 .success{    
     background-color:#000000;
     text-align:center;
+}
+.signup{
+   width: 500px; height: 300px;top:100px; right:20px; position:absolute;
 }
