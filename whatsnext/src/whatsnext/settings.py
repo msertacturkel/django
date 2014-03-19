@@ -1,8 +1,17 @@
 # Django settings for whatsnext project.
-
 #Build path
+from .email_info import *
 import os
 BASE_DIR=os.path.dirname(os.path.dirname(__file__))
+
+DEFAULT_FROM_EMAIL = DEFAULT_FROM_EMAIL 
+SERVER_EMAIL = SERVER_EMAIL 
+EMAIL_USE_TLS = EMAIL_USE_TLS
+EMAIL_HOST = EMAIL_HOST 
+EMAIL_PORT = EMAIL_PORT
+EMAIL_HOST_USER = EMAIL_HOST_USER 
+EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
+
 
 
 DEBUG = True
@@ -28,6 +37,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'users',
+    'south',
     )
 
 ADMINS = (
