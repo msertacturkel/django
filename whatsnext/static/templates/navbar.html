@@ -37,8 +37,13 @@
       <ul class="nav navbar-nav navbar-right">
       <li>
             <form action='/thank-you/' method='POST'>{%csrf_token%}
+                  <button type="submit" class="btn btn-success">Sign up</button>
+            </form>          
+      </li>
+      <li>
+            <form action='/sign-in/' method='POST'>{%csrf_token%}
                   <button type="submit" class="btn btn-success">Sign in</button>
-            </form>           
+            </form>          
       </li>
       <li><a href="/aboutus/">AboutUs</a></li>
       

@@ -29,8 +29,11 @@ def thankyou(request):
         return HttpResponseRedirect('/thank-you/')
     return render_to_response("thankyou.html",locals(),context_instance=RequestContext(request))
 
-def aboutus(request):
-    
+def aboutus(request):   
     return render_to_response("aboutus.html",locals(),context_instance=RequestContext(request))
+
+
+def signin(request):   
+    return render_to_response("signin.html",locals(),context_instance=RequestContext(request))
 
 

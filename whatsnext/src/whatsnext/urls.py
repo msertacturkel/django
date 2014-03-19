@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'users.views.home', name='home'),
     url(r'^thank-you/$', 'users.views.thankyou', name='thankyou'),
+    url(r'^sign-in/$', 'users.views.signin', name='signin'),
     
     # url(r'^whatsnext/', include('whatsnext.foo.urls')),
     url(r'^$aboutus/$', 'users.views.aboutus', name='aboutus'),
