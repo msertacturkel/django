@@ -9,7 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'users.views.home', name='home'),
-    url(r'^thank-you/$', 'users.views.thankyou', name='thankyou'),
+    url(r'^sign-up/$', 'users.views.signup', name='signup'),
     url(r'^sign-in/$', 'users.views.signin', name='signin'),
     url(r'^about-us/$', 'users.views.aboutus', name='aboutus'),
     url(r'^language/(P<language>[a-z\-]+)$', 'users.views.language'),
@@ -26,9 +26,9 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$', 'users.views.logout'),
     url(r'^accounts/loggedin/$', 'users.views.loggedin'),
     url(r'^accounts/invalid/$', 'users.views.invalid_login'),
-
-    
-    
+    url(r'^accounts/register/$', 'users.views.register'),
+    url(r'^accounts/register_success/$', 'users.views.register_success'),
+  
     
 )
 if settings.DEBUG:

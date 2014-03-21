@@ -11,36 +11,25 @@
             <a class="navbar-brand" href="{% url 'home' %}">WhatsNext</a>
           </div>
             <ul class="nav navbar-nav navbar-right">
-            <li>
-                  
-      <form class="form-inline" role="form" action='/accounts/auth/' method='post'> {% csrf_token %}
-        <div class="form-group">
-          <label class="sr-only" for="exampleInputEmail2">Username</label>
-          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="exampleInputPassword2">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-default">Sign in</button>
-      </form>
-                  
+            <li>                  
+            <form class="form-inline" role="form" action='/accounts/auth/' method='POST'> {% csrf_token %}
+                  <div class="form-group">
+                        <label class="sr-only" for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="password">
+                  </div>
+                  <button type="submit" class="btn btn-default">Sign in</button>
+            </form>                 
             </li>
             <li>
-                  <form action='/thank-you/' method='POST'>{%csrf_token%}
-                        <button type="submit" class="btn btn-success">Sign up</button>
+                  <form action='/sign-up/' method='POST'>{% csrf_token %}
+                       <button type="submit" class="btn btn-success">Sign up</button>
                   </form>          
             </li>
-            <!--<li>
-              <form action='/accounts/login/' method='POST'>{%csrf_token%}
-                        <button type="submit" class="btn btn-success">Sign in</button>
-                  </form>          
-            </li>-->
             <li><a href="{% url 'aboutus' %}">About Us</a></li>
-            
-             <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              </li>-->
             </ul>
               </div><!--/.navbar-collapse -->
             </div>
