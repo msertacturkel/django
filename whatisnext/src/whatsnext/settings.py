@@ -26,6 +26,8 @@ SECRET_KEY = 'oq-*-a$!7pv0icjxo#foih+&j^x-qvy#gtnh!n(!9!xk@cr5i%'
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
+    #'bootstrap_admin',
+    #'django.contrib.admin',
     'django_admin_bootstrapped.bootstrap3',
     'django_admin_bootstrapped',
     'django.contrib.auth',
