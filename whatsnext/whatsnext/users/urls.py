@@ -11,9 +11,9 @@ url(r'^logout/$', 'users.views.logout', name='logout'),
 
 
 #auth
-url(r'^login/$', 'users.views.login'),
-url(r'^auth/$', 'users.views.auth_view'),
-url(r'^logout/$', 'users.views.logout'),
+url(r'^login/$', 'users.views.login', name='login'),
+url(r'^auth/$', 'users.views.auth_view', name='auth_view'),
+url(r'^logout/$', 'users.views.logout', name='logout'),
 
 #url(r'^register/$', 'users.views.register'),
 #url(r'^register_success/$', 'users.views.register_success'),

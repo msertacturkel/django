@@ -21,7 +21,7 @@ def signup(request):
 def login(request):
     c={}
     c.update(csrf(request))
-    return render_to_response('/',c)
+    return render_to_response('login.html',c)
 
 def auth_view(request):
     username=request.POST.get('username','')

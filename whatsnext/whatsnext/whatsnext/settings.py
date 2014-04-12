@@ -8,6 +8,7 @@ TEMPLATE_DEBUG = DEBUG
 ADMINS = (
     ('M Sertac Turkel', 'msertacturkel@gmail.com'),
     ('Gokhan AKGUN', 'gakgun87@gmail.com'),
+    ('M Serkan Turkel', 'mserkanturkel@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -16,7 +17,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'whatsnext',                      # Or path to database file if using sqlite3.
-        'USER': 'wn',                      # Not used with sqlite3.
+        'USER': 'root',                      # Not used with sqlite3.
         'PASSWORD': 'hede',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.

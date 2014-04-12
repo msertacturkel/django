@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WhatisNext</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="/static/css/user/user_bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/user/user_font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="/static/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/timeline/timeline.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="/static/css/user/user_sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        {% block navbar_user%}
+        {% endblock %}
+        <!-- /.navbar-static-top -->
+        {% block leftpanel%}
+        {% endblock %}
+        <!-- /.navbar-static-side -->
+        {% block middle_user %}
+        
+        {% endblock %}
+        
+        {% block right %}
+        {%endblock %}
+       
+        {% block footer %}
+        {% endblock %}
+                       
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="/static/js/user/user_jquery-1.10.2.js"></script>
+    <script src="/static/js/user/user_bootstrap.min.js"></script>
+    <script src="/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Dashboard -->
+    <script src="/static/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="/static/js/plugins/morris/morris.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="/static/js/user /user_sb-admin.js"></script>
+
+    <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
+    <script src="/static/js/demo/dashboard-demo.js"></script>
+
+</body>
+
+</html>

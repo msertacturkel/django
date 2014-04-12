@@ -6,45 +6,31 @@
 {% endblock %}
 
 {% block combotron %}
+       <div class="jumbotron">
+      <div class="container">
+        <h1>Merhaba , Dunya!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
 {% endblock %}
-  <!--<form action="/accounts/auth/" class="form-signin" method="post">{% csrf_token %}
-      <h3 class="form-signin-heading text-center">Please log in</h3>
-      {% if form.non_field_errors %}
-          <div class="alert alert-danger">
-            {{ form.non_field_errors|striptags }}
-          </div>
-      {% endif %}
-      {% if not form.username.errors %}
-        <input id="username" name="username" type="text" class="form-control" placeholder="Username (admin)" autofocus>
-      {% else %}
-        <div class="form-group has-error">
-          {% for error in form.username.errors %}
-            <label class="control-label" for="id_username">{{ error }}</label>
-          {% endfor %}
-          <input id="username" name="username" type="text" class="form-control" placeholder="Username (admin)" autofocus>
+{% block content %}
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-      {% endif %}
-      {% if not form.password.errors %}
-        <input id="password" name="password" type="text" class="form-control" placeholder="Password (admin)" autofocus>
-      {% else %}
-        <div class="form-group has-error">
-          {% for error in form.password.errors %}
-            <label class="control-label" for="id_password">{{ error }}</label>
-          {% endfor %}
-          <input id="id_password" name="password" type="text" class="form-control" placeholder="Password (admin)">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+           {% include 'signup.html' %}     
         </div>
-      {% endif %}
-      
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-    </form>
-  </form>-->
-  {% if form.errors %}
-    <p class="error">Sorry, that's not a valid username or password </p> 
-  {% endif %}  
-    <form action="/accounts/auth/" method="post">{% csrf_token %}
-    <label for="username">User name:</label>
-    <input type="text" name="username" value="" id="username">
-    <label for="password">Password:</label>
-    <input type="password" name="password" value="" id="password">
-    <input type="submit" value="login">
-    </form> 
+      </div>
+{% endblock %}
+

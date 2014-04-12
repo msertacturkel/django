@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Log in{% endblock %}
+
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
+
+{% block combotron %}
+       <div class="jumbotron">
+      <div class="container">
+        <h1>Merhaba!</h1>
+        <p>WhatsNext'e Hoşgeldiniz.Dünyanın en geniş profesyonel ağına şimdi katılın.</p>
+  
+      </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="container">
+      <!-- Example row of columns -->
+      <section>
+
+<p><p align="center"><b>Sizde milyonlarca kişi arasına şimdi katılın.</b></p></p>
+<div class="two-row-image">
+  
+      <img src="https://static.licdn.com/scds/common/u/images/apps/home/guesthome/ghp_international_1_150x150_v1.png" width="150" height="150" alt="Male Headshot">
+      <img src="https://static.licdn.com/scds/common/u/images/apps/home/guesthome/ghp_international_2_150x150_v1.png" width="150" height="150" alt="Female Headshot">
+      <img src="https://static.licdn.com/scds/common/u/images/apps/home/guesthome/ghp_international_3_150x150_v1.png" width="150" height="150" alt="Male Headshot">
+      <img src="https://static.licdn.com/scds/common/u/images/apps/home/guesthome/ghp_international_4_150x150_v1.png" width="150" height="150" alt="Female Headshot">
+      <img src="https://static.licdn.com/scds/common/u/images/apps/home/guesthome/ghp_international_5_150x150_v1.png" width="150" height="150" alt="Male Headshot">
+      <img src="https://static.licdn.com/scds/common/u/images/apps/home/guesthome/ghp_international_6_150x150_v1.png" width="150" height="150" alt="Male Headshot">
+    <img src="http://fhuner.com/wp-content/uploads/2012/05/Arrow-turn-left-icon.png" width="150" height="150" alt="Male Headshot">
+ 
+</div>
+    </section>
+      
+      <div class="col-md-4">
+          <div class="col-sm-4" style="text-align: center">
+
+<div class="panel panel-info" style="width:400px">
+    
+          <div class="panel-body">
+               <h4>Kayıt & Sign Up</h4>
+   
+           <form method='POST' action='/user/login/'>{%csrf_token%}
+               {{form.as_p}}
+           <button type="submit" class="btn btn-success">Ücretsiz Kayıt Ol</button>
+           </form>
+          </div>
+    </div>
+</div>   
+        </div>
+      </div>
+      
+{% endblock %}
+
