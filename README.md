@@ -5,5 +5,6 @@
     As you see, the background of the paragraph has changed.
     You can do a lot more with style attribute.
 </p>
+<span id="mySpan" hidden = "hidden">django</span>
 djangodeneme
 ======
